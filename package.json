@@ -1,5 +1,7 @@
 {
-  "name": "vite-electron-builder",
+  "name": "pms-titan-control",
+  "author": "Charlie Langridge - Penguin Media Solutions",
+  "description": "Control of titan desks from any machine on network",
   "private": true,
   "engines": {
     "node": ">=v14.16",
