@@ -3,7 +3,7 @@
     <div class="bg-white overflow-hidden shadow rounded-lg ">
       <div class="px-4 pt-5 sm:px-6">
         <span class="px-3 bg-white text-lg font-medium text-gray-900 break-words">
-          {{ settings.title }}
+          {{ title }}
         </span>
       </div>
       <div class="px-4 py-3 sm:p-6 ">
@@ -25,9 +25,15 @@ export default {
   props: {
     'titan_ip': {
       required: true,
+      type: String,
     },
-    'settings': {
+    'titanId': {
       required: true,
+      type: String,
+    },
+    'title': {
+      required: true,
+      type: String,
     },
   },
   data: function () {
@@ -41,12 +47,12 @@ export default {
 
 
       let url = 'http://'
-          + this.titan_ip
-          + ':4430/titan/script/2/Playbacks/FirePlaybackAtLevel?handle_titanId=' + this.settings.titanId
-          + '&level_level='+newLevel
-          + '&alwaysRefire=false';
+        + this.titan_ip
+        + ':4430/titan/script/2/Playbacks/FirePlaybackAtLevel?handle_titanId=' + this.titanId
+        + '&level_level=' + newLevel
+        + '&alwaysRefire=false';
       axios
-          .get(url);
+        .get(url);
     },
   },
   methods: {

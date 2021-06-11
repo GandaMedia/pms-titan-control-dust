@@ -11,7 +11,8 @@
       <master-fader
         v-if="masterFader !== null"
         :titan_ip="setupData.titan_ip"
-        :settings="masterFader"
+        :titan-id="mfTitanId"
+        :title="mfTitle"
       />
     </div>
   </div>
@@ -37,6 +38,20 @@ export default {
       masterFader: null,
       setupData: setupJson,
     };
+  },
+  computed: {
+    mfTitle: function () {
+      if (this.masterFader !== null){
+        return this.masterFader?.title ?? 'ERROR';
+      }
+      return 'ERROR';
+    },
+    mfTitanId: function () {
+      if (this.masterFader !== null){
+        return this.masterFader?.titanId ?? '0';
+      }
+      return '0';
+    },
   },
   mounted() {
     this.masterFader = settingsJson.master_fader ?? null;
