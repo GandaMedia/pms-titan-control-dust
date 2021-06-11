@@ -24,8 +24,7 @@
   "browserslist": [
     "Chrome 91"
   ],
-  "simple-git-hooks": {
-  },
+  "simple-git-hooks": {},
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --cache --fix"
   },
