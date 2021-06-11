@@ -1,6 +1,9 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="relative bg-red-600" v-show="connectionError">
+  <div
+    v-show="connectionError"
+    class="relative bg-red-600"
+  >
     <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
       <div class="pr-16 sm:text-center sm:px-16">
         <p class="font-medium text-white">
@@ -10,7 +13,6 @@
           <span class="hidden md:inline">
             TITAN SERVER NOT CONNECTED AT {{ setupData.titan_ip }}
           </span>
-
         </p>
       </div>
     </div>
@@ -18,37 +20,18 @@
 </template>
 
 <script>
-import {XIcon} from '@heroicons/vue/outline'
-import setupJson from '../../setup.json'
+import setupJson from '../../setup.json';
 import axios from 'axios';
 
 export default {
   components: {
-    XIcon,
   },
   data: function () {
     return {
       setupData: setupJson,
       interval: null,
       connectionError: true,
-    }
-  },
-  methods: {
-    checkTitanPresence: function () {
-      let self = this;
-      axios
-          .get('http://' + this.setupData.titan_ip + ':4430/titan/get/System/SoftwareVersion')
-          .then(function (response) {
-            // handle success
-            self.connectionError = false;
-
-          })
-          .catch(function (error) {
-            // handle error
-            self.connectionError = true;
-          })
-
-    }
+    };
   },
   created() {
     this.checkTitanPresence();
@@ -56,8 +39,25 @@ export default {
   },
   beforeUnmount() {
     clearInterval();
-  }
-}
+  },
+  methods: {
+    titanIsConnected: function(){
+      return axios
+        .get('http://' + this.setupData.titan_ip + ':4430/titan/get/System/SoftwareVersion')
+        .then(function () {
+          // handle success
+          return false;
+
+        })
+        .catch(function () {
+          // handle error
+          return true;
+        });    },
+    checkTitanPresence: function () {
+      this.connectionError = this.titanIsConnected().then(result => this.connectionError = result);
+    },
+  },
+};
 
 //
 // function handleErrors(response) {

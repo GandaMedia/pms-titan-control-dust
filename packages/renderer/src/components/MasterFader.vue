@@ -3,11 +3,16 @@
     <div class="bg-white overflow-hidden shadow rounded-lg ">
       <div class="px-4 pt-5 sm:px-6">
         <span class="px-3 bg-white text-lg font-medium text-gray-900 break-words">
-        {{settings.title}}
-      </span>
+          {{ settings.title }}
+        </span>
       </div>
       <div class="px-4 py-3 sm:p-6 ">
-        <input v-model="level" type="range" orient="vertical" class="mx-auto shadow-sm block w-full border-gray-300 rounded-md"/>
+        <input
+          v-model="level"
+          type="range"
+          orient="vertical"
+          class="mx-auto shadow-sm block w-full border-gray-300 rounded-md"
+        >
       </div>
     </div>
   </div>
@@ -28,7 +33,7 @@ export default {
   data: function () {
     return {
       level: 0,
-    }
+    };
   },
   watch: {
     level: function (level) {
@@ -41,14 +46,14 @@ export default {
           + '&level_level='+newLevel
           + '&alwaysRefire=false';
       axios
-          .get(url)
-    }
+          .get(url);
+    },
   },
   methods: {
     getFaderLevel: function () {
       // todo
-    }
-  }
-}
+    },
+  },
+};
 </script>
 

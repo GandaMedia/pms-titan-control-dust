@@ -1,23 +1,30 @@
 <template>
-  <titan-connection-check/>
+  <titan-connection-check />
   <div class="mx-auto p-4 sm:p-6 lg:p-8">
     <div class="flex">
       <div class="flex-grow">
-        <button-grid @fire-playback="firePlayback" @kill-playback="killPlayback"/>
+        <button-grid
+          @fire-playback="firePlayback"
+          @kill-playback="killPlayback"
+        />
       </div>
-      <master-fader v-if="masterFader !== null" :titan_ip="setupData.titan_ip" :settings="masterFader"/>
+      <master-fader
+        v-if="masterFader !== null"
+        :titan_ip="setupData.titan_ip"
+        :settings="masterFader"
+      />
     </div>
   </div>
 </template>
 
 <script>
 
-import ButtonGrid from "./components/ButtonGrid.vue";
-import TitanConnectionCheck from "./components/TitanConnectionCheck.vue";
-import MasterFader from "./components/MasterFader.vue";
-import settingsJson from '../settings.json'
-import setupJson from '../setup.json'
-import axios from "axios";
+import ButtonGrid from './components/ButtonGrid.vue';
+import TitanConnectionCheck from './components/TitanConnectionCheck.vue';
+import MasterFader from './components/MasterFader.vue';
+import settingsJson from '../settings.json';
+import setupJson from '../setup.json';
+import axios from 'axios';
 
 export default {
   components: {
@@ -29,7 +36,7 @@ export default {
     return {
       masterFader: null,
       setupData: setupJson,
-    }
+    };
   },
   mounted() {
     this.masterFader = settingsJson.master_fader ?? null;
@@ -42,24 +49,24 @@ export default {
         + '&level_level=1'
         + '&alwaysRefire=false';
       axios
-        .get(url)
+        .get(url);
     },
     killPlayback: function (tid) {
       let url = 'http://'
         + this.setupData.titan_ip
         + ':4430/titan/script/2/Playbacks/KillPlayback?handle_titanId=' + tid;
       axios
-        .get(url)
+        .get(url);
     },
     killAllPlaybacks: function () {
       let url = 'http://'
         + this.setupData.titan_ip
         + ':4430/titan/script/2/Playbacks/KillAllPlaybacks';
       axios
-        .get(url)
+        .get(url);
     },
   },
-}
+};
 
 
 </script>
