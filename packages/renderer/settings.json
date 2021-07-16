@@ -1,6 +1,6 @@
 {
   "master_fader": {
-    "title": "Grand Master",
+    "title": "Smoke Power",
     "titanId": 3047
   },
   "effects": [
@@ -14,6 +14,12 @@
       "title": "Blackout",
       "type": "toggle",
       "titanId": 2869,
+      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+    },
+    {
+      "title": "Smoke/Haze",
+      "type": "toggle",
+      "titanId": 3050,
       "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     }
   ],
