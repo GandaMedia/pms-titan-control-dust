@@ -51,6 +51,7 @@ export default {
         + ':4430/titan/script/2/Playbacks/FirePlaybackAtLevel?handle_titanId=' + this.titanId
         + '&level_level=' + newLevel
         + '&alwaysRefire=false';
+
       axios
         .get(url);
     },
