@@ -56,6 +56,36 @@
         Playbacks
       </span>
     </div>
+    <ul
+      role="list"
+      class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 xl:gap-x-8"
+    >
+      <li
+        v-for="button in show_triggers"
+        :key="button.source"
+        class="relative"
+      >
+        <div
+          class="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden"
+        >
+          <img
+            :src="button.source"
+            alt=""
+            class="object-cover pointer-events-none "
+          >
+          <button
+            type="button"
+            class="absolute inset-0 focus:outline-none hover:bg-black hover:opacity-50 focus:bg-green-500 focus:opacity-50"
+            @click="triggerShow(button)"
+          >
+            <span class="sr-only">View details for {{ button.title }}</span>
+          </button>
+        </div>
+        <p class="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none">
+          {{ button.title }}
+        </p>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -63,7 +93,7 @@
 import settingsJson from '../../settings.json';
 
 export default {
-  emits: ['firePlayback', 'killPlayback'],
+  emits: ['firePlayback', 'killPlayback', 'killAllPlaybacks', 'triggerPlayback'],
   data: function () {
     return {
       effects: settingsJson.effects,
@@ -81,6 +111,9 @@ export default {
     this.interval = setInterval(() => this.checkToggleState(), 30000);
   },
   methods: {
+    triggerShow: function (button) {
+      this.$emit('triggerPlayback', button.titanId);
+    },
     pushEffect: function (button) {
       button.down = true;
       if (button.type === 'toggle') {

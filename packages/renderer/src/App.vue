@@ -6,6 +6,8 @@
         <button-grid
           @fire-playback="firePlayback"
           @kill-playback="killPlayback"
+          @kill-all-playbacks="killAllPlaybacks"
+          @trigger-playback="triggerPlayback"
         />
       </div>
       <master-fader
@@ -41,13 +43,13 @@ export default {
   },
   computed: {
     mfTitle: function () {
-      if (this.masterFader !== null){
+      if (this.masterFader !== null) {
         return this.masterFader?.title ?? 'ERROR';
       }
       return 'ERROR';
     },
     mfTitanId: function () {
-      if (this.masterFader !== null){
+      if (this.masterFader !== null) {
         return this.masterFader?.titanId ?? '0';
       }
       return '0';
@@ -57,6 +59,17 @@ export default {
     this.masterFader = settingsJson.master_fader ?? null;
   },
   methods: {
+    triggerPlayback: function (tid) {
+      let self = this;
+      let url = 'http://'
+        + this.setupData.titan_ip
+        + ':4430/titan/script/2/Playbacks/KillAllPlaybacks';
+      axios
+        .get(url)
+        .then(function () {
+          self.firePlayback(tid);
+        });
+    },
     firePlayback: function (tid) {
       let url = 'http://'
         + this.setupData.titan_ip
@@ -87,8 +100,7 @@ export default {
 </script>
 
 <style>
-input[type=range][orient=vertical]
-{
+input[type=range][orient=vertical] {
   writing-mode: bt-lr; /* IE */
   -webkit-appearance: slider-vertical; /* WebKit */
   width: 8px;
