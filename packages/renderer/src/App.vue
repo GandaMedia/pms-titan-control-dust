@@ -60,14 +60,19 @@ export default {
   },
   methods: {
     triggerPlayback: function (tid) {
-      let self = this;
       let url = 'http://'
         + this.setupData.titan_ip
         + ':4430/titan/script/2/Playbacks/KillAllPlaybacks';
+      let triggerUrl = 'http://'
+        + this.setupData.titan_ip
+        + ':4430/titan/script/2/Playbacks/FirePlaybackAtLevel?handle_titanId=' + tid
+        + '&level_level=1'
+        + '&alwaysRefire=false';
       axios
         .get(url)
         .then(function () {
-          self.firePlayback(tid);
+          axios
+            .get(triggerUrl);
         });
     },
     firePlayback: function (tid) {
