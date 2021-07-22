@@ -12,7 +12,7 @@
   "effects": [
     {
       "title": "Strobe",
-      "type": "instant",
+      "type": "toggle",
       "titanId": 2860,
       "source": "https://images.unsplash.com/photo-1583459094467-e0db130c0dea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     },
@@ -24,13 +24,13 @@
     },
     {
       "title": "Blinder",
-      "type": "instant",
+      "type": "toggle",
       "titanId": 14238,
         "source": "https://images.unsplash.com/photo-1600181679202-1d3d9af9a2d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
     },
     {
       "title": "Rainbow Flash",
-      "type": "instant",
+      "type": "toggle",
       "titanId": 14286,
         "source": "https://images.unsplash.com/photo-1525787018795-f6419ea29f90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
     }
