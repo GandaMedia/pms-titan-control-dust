@@ -58,8 +58,30 @@
     </div>
     <ul
       role="list"
-      class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 xl:gap-x-8"
+      class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-5  xl:gap-x-8"
     >
+      <!--      <li class="relative">-->
+      <!--        <div-->
+      <!--          class="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden"-->
+      <!--        >-->
+      <!--          <img-->
+      <!--            src="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"-->
+      <!--            alt=""-->
+      <!--            class="object-cover pointer-events-none "-->
+      <!--          >-->
+      <!--          <button-->
+      <!--            type="button"-->
+      <!--            class="absolute inset-0 focus:outline-none hover:bg-black hover:opacity-50 focus:bg-green-500 focus:opacity-50"-->
+      <!--            @click="triggerAutoplay"-->
+      <!--          >-->
+      <!--            <span class="sr-only">AUTOPLAY</span>-->
+      <!--          </button>-->
+      <!--        </div>-->
+      <!--        <p class="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none">-->
+      <!--          AUTOPLAY-->
+      <!--        </p>-->
+      <!--      </li>-->
+
       <li
         v-for="button in show_triggers"
         :key="button.source"
@@ -93,7 +115,7 @@
 import settingsJson from '../../settings.json';
 
 export default {
-  emits: ['firePlayback', 'killPlayback', 'killAllPlaybacks', 'triggerPlayback'],
+  emits: ['firePlayback', 'killPlayback', 'killAllPlaybacks', 'triggerPlayback', 'triggerAutoplay'],
   data: function () {
     return {
       effects: settingsJson.effects,
@@ -113,6 +135,9 @@ export default {
   methods: {
     triggerShow: function (button) {
       this.$emit('triggerPlayback', button.titanId);
+    },
+    triggerAutoplay: function () {
+      this.$emit('triggerAutoplay');
     },
     pushEffect: function (button) {
       button.down = true;

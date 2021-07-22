@@ -8,14 +8,23 @@
           @kill-playback="killPlayback"
           @kill-all-playbacks="killAllPlaybacks"
           @trigger-playback="triggerPlayback"
+          @trigger-autoplay="triggerAutoplay"
         />
       </div>
-      <master-fader
-        v-if="masterFader !== null"
-        :titan_ip="setupData.titan_ip"
-        :titan-id="mfTitanId"
-        :title="mfTitle"
-      />
+      <div class="grid grid-cols-1 gap-4">
+        <master-fader
+          v-for="fader in faders"
+          :key="fader.name"
+          :titan_ip="setupData.titan_ip"
+          :titan-id="fader.titanId"
+          :title="fader.title"
+        />
+        <rate-fader
+          :titan_ip="setupData.titan_ip"
+          :titan-id="1612"
+          title="Speed"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -28,17 +37,21 @@ import MasterFader from './components/MasterFader.vue';
 import settingsJson from '../settings.json';
 import setupJson from '../setup.json';
 import axios from 'axios';
+import RateFader from '/@/components/RateFader.vue';
 
 export default {
   components: {
     MasterFader,
+    RateFader,
     TitanConnectionCheck,
     ButtonGrid,
   },
   data: function () {
     return {
       masterFader: null,
+      rateFader: null,
       setupData: setupJson,
+      faders: [],
     };
   },
   computed: {
@@ -57,6 +70,7 @@ export default {
   },
   mounted() {
     this.masterFader = settingsJson.master_fader ?? null;
+    this.faders = settingsJson.faders;
   },
   methods: {
     triggerPlayback: function (tid) {
@@ -68,6 +82,20 @@ export default {
         + ':4430/titan/script/2/Playbacks/FirePlaybackAtLevel?handle_titanId=' + tid
         + '&level_level=1'
         + '&alwaysRefire=false';
+      axios
+        .get(url)
+        .then(function () {
+          axios
+            .get(triggerUrl);
+        });
+    },
+    triggerAutoplay: function () {
+      let url = 'http://'
+        + this.setupData.titan_ip
+        + ':4430/titan/script/2/Playbacks/KillAllPlaybacks';
+      let triggerUrl = 'http://'
+        + this.setupData.titan_ip
+        + ':4430/titan/script/2/CueLists/Play?handle_titanId=8827';
       axios
         .get(url)
         .then(function () {

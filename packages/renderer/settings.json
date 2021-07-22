@@ -1,103 +1,90 @@
 {
-  "master_fader": {
-    "title": "Smoke Power",
-    "titanId": 3047
-  },
+  "faders": [
+    {
+      "title": "Smoke Power",
+      "titanId": 10542
+    },
+    {
+      "title": "Smoke Fan",
+      "titanId": 10545
+    }
+  ],
   "effects": [
     {
       "title": "Strobe",
       "type": "instant",
-      "titanId": 2871,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "titanId": 2860,
+      "source": "https://images.unsplash.com/photo-1583459094467-e0db130c0dea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     },
     {
       "title": "Blackout",
       "type": "toggle",
-      "titanId": 2869,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "titanId": 2862,
+      "source": "https://images.unsplash.com/photo-1589180883060-7e17fc2efaf6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     },
     {
-      "title": "Smoke/Haze",
-      "type": "toggle",
-      "titanId": 3050,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "title": "Blinder",
+      "type": "instant",
+      "titanId": 14238,
+        "source": "https://images.unsplash.com/photo-1600181679202-1d3d9af9a2d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+    },
+    {
+      "title": "Rainbow Flash",
+      "type": "instant",
+      "titanId": 14286,
+        "source": "https://images.unsplash.com/photo-1525787018795-f6419ea29f90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
     }
   ],
   "show_triggers": [
     {
-      "title": "1",
-      "titanId": 2836,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "title": "AutoPilot",
+      "titanId": 8827,
+      "source": "https://images.unsplash.com/photo-1496843916299-590492c751f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     },
     {
-      "title": "2",
+      "title": "Slow Red",
       "titanId": 2838,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "source": "https://images.unsplash.com/photo-1469532844423-7e9107f9a96f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80"
     },
     {
-      "title": "3",
+      "title": "Slow Blue",
       "titanId": 2840,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "source": "https://images.unsplash.com/photo-1536839042892-7baf158bfde5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     },
     {
-      "title": "4",
+      "title": "Colour Scroll",
       "titanId": 2844,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "source": "https://images.unsplash.com/photo-1520549421221-3e77d246063d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
     },
     {
-      "title": "5",
+      "title": "Tilt Dim",
       "titanId": 2848,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "source": "https://images.unsplash.com/photo-1564804176050-8d4ffecb083d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3264&q=80"
     },
     {
-      "title": "6",
+      "title": "MASH Colours",
       "titanId": 2850,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "source": "https://images.unsplash.com/photo-1600984177310-c86c8f8fa9c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
     },
     {
-      "title": "7",
+      "title": "White Flash",
       "titanId": 2852,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "source": "https://images.unsplash.com/photo-1518301729788-0149e0619397?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
     },
     {
-      "title": "8",
+      "title": "Police",
       "titanId": 2854,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "source": "https://images.unsplash.com/photo-1526666361175-e3595627c376?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80"
     },
     {
-      "title": "9",
+      "title": "Tungsten Pulse",
       "titanId": 2842,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "source": "https://images.unsplash.com/photo-1605646481836-5e5a98c6c756?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
     },
     {
-      "title": "10",
-      "titanId": 2846,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "11",
-      "titanId": 2856,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "12",
-      "titanId": 2858,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "13",
-      "titanId": 2860,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "14",
-      "titanId": 2862,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "15",
+      "title": "End Of Night",
       "titanId": 2864,
-      "source": "https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+      "source": "https://images.unsplash.com/photo-1581864353095-ec9ced350147?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
     }
   ]
 }
