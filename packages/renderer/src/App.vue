@@ -12,16 +12,19 @@
         />
       </div>
       <div class="grid grid-cols-1 gap-4">
-        <master-fader
+        <div
           v-for="fader in faders"
           :key="fader.name"
-          :titan_ip="setupData.titan_ip"
-          :titan-id="fader.titanId"
-          :title="fader.title"
-        />
+        >
+          <master-fader
+            :titan_ip="setupData.titan_ip"
+            :titan-id="fader.titanId"
+            :title="fader.title"
+          />
+        </div>
         <rate-fader
           :titan_ip="setupData.titan_ip"
-          :titan-id="1612"
+          titan-id="1612"
           title="Speed"
         />
       </div>
@@ -51,7 +54,7 @@ export default {
       masterFader: null,
       rateFader: null,
       setupData: setupJson,
-      faders: [],
+      faders: settingsJson.faders,
     };
   },
   computed: {
@@ -69,8 +72,8 @@ export default {
     },
   },
   mounted() {
-    this.masterFader = settingsJson.master_fader ?? null;
-    this.faders = settingsJson.faders;
+    // this.masterFader = settingsJson.master_fader ?? null;
+    // this.faders = settingsJson.faders;
   },
   methods: {
     triggerPlayback: function (tid) {
