@@ -60,9 +60,28 @@ export default {
         .get(url);
     },
   },
+  mounted() {
+      this.$nextTick(function () {
+        window.setInterval(() => {
+          this.sendLevel();
+        },1000);
+      });
+  },
   methods: {
     getFaderLevel: function () {
       // todo
+    },
+    sendLevel: function () {
+      let newLevel = this.level / 100;
+
+
+      let url = 'http://'
+        + this.titan_ip
+        + ':4430/titan/script/2/Masters/SetSpeed?handle_titanId=' + this.titanId
+        + '&value=' + (newLevel * 300);
+
+      axios
+        .get(url);
     },
   },
 };

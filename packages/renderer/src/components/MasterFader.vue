@@ -56,9 +56,29 @@ export default {
         .get(url);
     },
   },
+  mounted() {
+    this.$nextTick(function () {
+      window.setInterval(() => {
+        this.sendLevel();
+      },1000);
+    });
+  },
   methods: {
     getFaderLevel: function () {
       // todo
+    },
+    sendLevel: function () {
+      let newLevel = this.level / 100;
+
+
+      let url = 'http://'
+        + this.titan_ip
+        + ':4430/titan/script/2/Playbacks/FirePlaybackAtLevel?handle_titanId=' + this.titanId
+        + '&level_level=' + newLevel
+        + '&alwaysRefire=false';
+
+      axios
+        .get(url);
     },
   },
 };
