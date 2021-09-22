@@ -55,6 +55,7 @@ export default {
       rateFader: null,
       setupData: setupJson,
       faders: settingsJson.faders,
+      show_triggers: settingsJson.show_triggers,
     };
   },
   computed: {
@@ -77,20 +78,29 @@ export default {
   },
   methods: {
     triggerPlayback: function (tid) {
-      let url = 'http://'
-        + this.setupData.titan_ip
-        + ':4430/titan/script/2/Playbacks/KillAllPlaybacks';
+      // let ip = this.setupData.titan_ip;
+      // this.show_triggers.forEach(function (trigger) {
+      //   console.log(trigger);
+      //   let url = 'http://'
+      //     + ip
+      //     + ':4430/titan/script/2/Playbacks/KillAllPlaybacks';
+      //   axios
+      //     .get(url);
+      // });
+
       let triggerUrl = 'http://'
         + this.setupData.titan_ip
         + ':4430/titan/script/2/Playbacks/FirePlaybackAtLevel?handle_titanId=' + tid
         + '&level_level=1'
         + '&alwaysRefire=false';
-      axios
-        .get(url)
-        .then(function () {
-          axios
-            .get(triggerUrl);
-        });
+      // axios
+      //   .get(url)
+      //   .then(function () {
+      //     axios
+      //       .get(triggerUrl);
+      //   });
+
+      axios.get(triggerUrl);
     },
     triggerAutoplay: function () {
       let url = 'http://'

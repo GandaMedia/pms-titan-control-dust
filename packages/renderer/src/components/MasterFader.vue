@@ -59,7 +59,7 @@ export default {
   mounted() {
     this.$nextTick(function () {
       window.setInterval(() => {
-        this.sendLevel();
+        // this.sendLevel();
       },1000);
     });
   },
