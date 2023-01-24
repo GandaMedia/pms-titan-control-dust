@@ -1,102 +1,79 @@
-import {app, BrowserWindow} from 'electron';
-import {join} from 'path';
-import {URL} from 'url';
+import {app} from 'electron';
+import './security-restrictions';
+import {restoreOrCreateWindow} from '/@/mainWindow';
+import {platform} from 'node:process';
 
-
+/**
+ * Prevent electron from running multiple instances.
+ */
 const isSingleInstance = app.requestSingleInstanceLock();
-
 if (!isSingleInstance) {
   app.quit();
   process.exit(0);
 }
+app.on('second-instance', restoreOrCreateWindow);
 
+/**
+ * Disable Hardware Acceleration to save more system resources.
+ */
 app.disableHardwareAcceleration();
 
 /**
- * Workaround for TypeScript bug
- * @see https://github.com/microsoft/TypeScript/issues/41468#issuecomment-727543400
+ * Shout down background process if all windows was closed
  */
-const env = import.meta.env;
-
-
-// Install "Vue.js devtools"
-if (env.MODE === 'development') {
-  app.whenReady()
-    .then(() => import('electron-devtools-installer'))
-    .then(({default: installExtension, VUEJS3_DEVTOOLS}) => installExtension(VUEJS3_DEVTOOLS, {
-      loadExtensionOptions: {
-        allowFileAccess: true,
-      },
-    }))
-    .catch(e => console.error('Failed install extension:', e));
-}
-
-let mainWindow: BrowserWindow | null = null;
-
-const createWindow = async () => {
-  mainWindow = new BrowserWindow({
-    show: false, // Use 'ready-to-show' event to show window
-    webPreferences: {
-      preload: join(__dirname, '../../preload/dist/index.cjs'),
-      contextIsolation: env.MODE !== 'test',   // Spectron tests can't work with contextIsolation: true
-      enableRemoteModule: env.MODE === 'test', // Spectron tests can't work with enableRemoteModule: false
-    },
-  });
-
-  /**
-   * If you install `show: true` then it can cause issues when trying to close the window.
-   * Use `show: false` and listener events `ready-to-show` to fix these issues.
-   *
-   * @see https://github.com/electron/electron/issues/25012
-   */
-  mainWindow.on('ready-to-show', () => {
-    mainWindow?.show();
-
-    if (env.MODE === 'development') {
-      mainWindow?.webContents.openDevTools();
-    }
-  });
-
-  /**
-   * URL for main window.
-   * Vite dev server for development.
-   * `file://../renderer/index.html` for production and test
-   */
-  const pageUrl = env.MODE === 'development'
-    ? env.VITE_DEV_SERVER_URL
-    : new URL('../renderer/dist/index.html', 'file://' + __dirname).toString();
-
-
-  await mainWindow.loadURL(pageUrl);
-};
-
-
-app.on('second-instance', () => {
-  // Someone tried to run a second instance, we should focus our window.
-  if (mainWindow) {
-    if (mainWindow.isMinimized()) mainWindow.restore();
-    mainWindow.focus();
-  }
-});
-
-
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
+  if (platform !== 'darwin') {
     app.quit();
   }
 });
 
+/**
+ * @see https://www.electronjs.org/docs/latest/api/app#event-activate-macos Event: 'activate'.
+ */
+app.on('activate', restoreOrCreateWindow);
 
-app.whenReady()
-  .then(createWindow)
-  .catch((e) => console.error('Failed create window:', e));
+/**
+ * Create the application window when the background process is ready.
+ */
+app
+  .whenReady()
+  .then(restoreOrCreateWindow)
+  .catch(e => console.error('Failed create window:', e));
 
+/**
+ * Install Vue.js or any other extension in development mode only.
+ * Note: You must install `electron-devtools-installer` manually
+ */
+// if (import.meta.env.DEV) {
+//   app.whenReady()
+//     .then(() => import('electron-devtools-installer'))
+//     .then(({default: installExtension, VUEJS3_DEVTOOLS}) => installExtension(VUEJS3_DEVTOOLS, {
+//       loadExtensionOptions: {
+//         allowFileAccess: true,
+//       },
+//     }))
+//     .catch(e => console.error('Failed install extension:', e));
+// }
 
-// Auto-updates
-if (env.PROD) {
-  app.whenReady()
+/**
+ * Check for app updates, install it in background and notify user that new version was installed.
+ * No reason run this in non-production build.
+ * @see https://www.electron.build/auto-update.html#quick-setup-guide
+ *
+ * Note: It may throw "ENOENT: no such file app-update.yml"
+ * if you compile production app without publishing it to distribution server.
+ * Like `npm run compile` does. It's ok 😅
+ */
+if (import.meta.env.PROD) {
+  app
+    .whenReady()
     .then(() => import('electron-updater'))
-    .then(({autoUpdater}) => autoUpdater.checkForUpdatesAndNotify())
-    .catch((e) => console.error('Failed check updates:', e));
+    .then(module => {
+      const autoUpdater =
+        module.autoUpdater ||
+        // @ts-expect-error Hotfix for https://github.com/electron-userland/electron-builder/issues/7338
+        (module.default.autoUpdater as (typeof module)['autoUpdater']);
+      return autoUpdater.checkForUpdatesAndNotify();
+    })
+    .catch(e => console.error('Failed check and install updates:', e));
 }
-
