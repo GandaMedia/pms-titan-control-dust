@@ -17,6 +17,61 @@
       "source": "https://images.unsplash.com/photo-1583459094467-e0db130c0dea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     },
     {
+      "title": "Strobe Pulses",
+      "titanId": 29308,
+      "source": "https://images.unsplash.com/photo-1615486511262-c7b5c7f42b14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+    },
+    {
+      "title": "Strobe Scatter",
+      "titanId": 27850,
+      "source": "https://images.unsplash.com/photo-1521144664892-85ff056e75a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+    },
+    {
+      "title": "Strobe Offset",
+      "titanId": 29430,
+      "source": "https://images.unsplash.com/photo-1485550409059-9afb054cada4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+    },
+    {
+      "title": "Strobe Ramp",
+      "titanId": 30119,
+      "source": "https://images.unsplash.com/photo-1526277712896-20b3ec88a2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+      "title": "Strobe Slow",
+      "titanId": 31903,
+      "source": "https://images.unsplash.com/photo-1588087699156-a91fb26b1b1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+    },
+    {
+      "title": "Strobe Wash",
+      "titanId": 31814,
+      "source": "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+      "title": "Strobe White",
+      "titanId": 30145,
+      "source": "https://images.unsplash.com/photo-1484503793037-5c9644d6a80a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+    },
+    {
+      "title": "Strobe Red",
+      "titanId": 30153,
+      "source": "https://images.unsplash.com/photo-1530128118208-89f6ce02b37b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+      "title": "Strobe Blue",
+      "titanId": 30159,
+      "source": "https://plus.unsplash.com/premium_photo-1670282654525-62fed9d7d4ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+    },
+    {
+      "title": "Strobe Rainbow",
+      "titanId": 30170,
+      "source": "https://images.unsplash.com/photo-1558470598-a5dda9640f68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+    },
+    {
+      "title": "Strobe RGB",
+      "titanId": 30239,
+      "source": "https://images.unsplash.com/photo-1514732800601-524d62e9b8a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1396&q=80"
+    },
+    {
       "title": "Black out",
       "type": "toggle",
       "titanId": 2862,
