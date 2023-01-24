@@ -17,13 +17,13 @@
           :key="fader.name"
         >
           <master-fader
-            :titan_ip="setupData.titan_ip"
-            :titan-id="fader.titanId"
+            :titan-ip="setupData.titan_ip"
+            :titan-id="fader.titanId.toString()"
             :title="fader.title"
           />
         </div>
         <rate-fader
-          :titan_ip="setupData.titan_ip"
+          :titan-ip="setupData.titan_ip"
           titan-id="1612"
           title="Speed"
         />

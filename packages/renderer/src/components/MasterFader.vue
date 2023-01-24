@@ -23,7 +23,7 @@ import axios from 'axios';
 
 export default {
   props: {
-    'titan_ip': {
+    'titanIp': {
       required: true,
       type: String,
     },

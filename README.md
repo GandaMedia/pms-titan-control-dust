@@ -92,7 +92,7 @@ Vite provides many useful features, such as: `TypeScript`, `TSX/JSX`, `CSS/JSON 
 
 ## How it works
 
-The template requires a minimum amount [dependencies](package-bak.json). Only **Vite** is used for building, nothing more.
+The template requires a minimum amount [dependencies](package.json). Only **Vite** is used for building, nothing more.
 
 ### Project Structure
 

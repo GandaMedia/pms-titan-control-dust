@@ -1,37 +1,31 @@
 /* eslint-env node */
 
-import {chrome} from '../../electron-vendors.config.json';
-import {join} from 'path';
-import { builtinModules } from 'module';
-import {defineConfig} from 'vite';
+import {chrome} from '../../.electron-vendors.cache.json';
 import vue from '@vitejs/plugin-vue';
-import {loadAndSetEnv} from '../../scripts/loadAndSetEnv.mjs';
-
+import {renderer} from 'unplugin-auto-expose';
+import {join} from 'node:path';
+import {injectAppVersion} from '../../version/inject-app-version-plugin.mjs';
 
 const PACKAGE_ROOT = __dirname;
+const PROJECT_ROOT = join(PACKAGE_ROOT, '../..');
 
 /**
- * Vite looks for `.env.[mode]` files only in `PACKAGE_ROOT` directory.
- * Therefore, you must manually load and set the environment variables from the root directory above
- */
-loadAndSetEnv(process.env.MODE, process.cwd());
-
-
-/**
+ * @type {import('vite').UserConfig}
  * @see https://vitejs.dev/config/
  */
-export default defineConfig({
+const config = {
+  mode: process.env.MODE,
   root: PACKAGE_ROOT,
+  envDir: PROJECT_ROOT,
   resolve: {
     alias: {
       '/@/': join(PACKAGE_ROOT, 'src') + '/',
     },
   },
-  plugins: [vue()],
   base: '',
   server: {
-    fsServe: {
-      root: join(PACKAGE_ROOT, '../../'),
+    fs: {
+      strict: true,
     },
   },
   build: {
@@ -39,19 +33,22 @@ export default defineConfig({
     target: `chrome${chrome}`,
     outDir: 'dist',
     assetsDir: '.',
-    terserOptions: {
-      ecma: 2020,
-      compress: {
-        passes: 2,
-      },
-      safari10: false,
-    },
     rollupOptions: {
-      external: [
-        ...builtinModules,
-      ],
+      input: join(PACKAGE_ROOT, 'index.html'),
     },
     emptyOutDir: true,
+    reportCompressedSize: false,
   },
-});
+  test: {
+    environment: 'happy-dom',
+  },
+  plugins: [
+    vue(),
+    renderer.vite({
+      preloadEntry: join(PACKAGE_ROOT, '../preload/src/index.ts'),
+    }),
+    injectAppVersion(),
+  ],
+};
 
+export default config;
