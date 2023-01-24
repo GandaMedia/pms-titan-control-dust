@@ -111,7 +111,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import settingsJson from '../../settings.json';
 
 export default {

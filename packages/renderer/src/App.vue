@@ -32,7 +32,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 
 import ButtonGrid from './components/ButtonGrid.vue';
 import TitanConnectionCheck from './components/TitanConnectionCheck.vue';

@@ -19,7 +19,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import setupJson from '../../setup.json';
 import axios from 'axios';
 
