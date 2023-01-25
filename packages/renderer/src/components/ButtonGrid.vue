@@ -14,7 +14,7 @@
   </div>
   <ul
     role="list"
-    class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-5  xl:gap-x-8"
+    class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-8  xl:gap-x-6"
   >
     <li
       v-for="button in effects"
@@ -58,30 +58,8 @@
     </div>
     <ul
       role="list"
-      class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-5  xl:gap-x-8"
+      class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 md:grid-cols-8  xl:gap-x-6"
     >
-      <!--      <li class="relative">-->
-      <!--        <div-->
-      <!--          class="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden"-->
-      <!--        >-->
-      <!--          <img-->
-      <!--            src="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"-->
-      <!--            alt=""-->
-      <!--            class="object-cover pointer-events-none "-->
-      <!--          >-->
-      <!--          <button-->
-      <!--            type="button"-->
-      <!--            class="absolute inset-0 focus:outline-none hover:bg-black hover:opacity-50 focus:bg-green-500 focus:opacity-50"-->
-      <!--            @click="triggerAutoplay"-->
-      <!--          >-->
-      <!--            <span class="sr-only">AUTOPLAY</span>-->
-      <!--          </button>-->
-      <!--        </div>-->
-      <!--        <p class="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none">-->
-      <!--          AUTOPLAY-->
-      <!--        </p>-->
-      <!--      </li>-->
-
       <li
         v-for="button in show_triggers"
         :key="button.source"
@@ -111,62 +89,64 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import settingsJson from '../../settings.json';
+import {onBeforeMount, onMounted, ref} from 'vue';
 
-export default {
-  emits: ['firePlayback', 'killPlayback', 'killAllPlaybacks', 'triggerPlayback', 'triggerAutoplay'],
-  data: function () {
-    return {
-      effects: settingsJson.effects,
-      show_triggers: settingsJson.show_triggers,
-    };
-  },
-  mounted() {
-    this.effects.forEach(function (effect) {
-      effect.active = false;
-      effect.down = false;
-    });
-  },
-  created() {
-    this.checkToggleState();
-    this.interval = setInterval(() => this.checkToggleState(), 30000);
-  },
-  methods: {
-    triggerShow: function (button) {
-      this.$emit('triggerPlayback', button.titanId);
-    },
-    triggerAutoplay: function () {
-      this.$emit('triggerAutoplay');
-    },
-    pushEffect: function (button) {
-      button.down = true;
-      if (button.type === 'toggle') {
-        if (button.active) {
-          this.$emit('killPlayback', button.titanId);
-        } else {
-          this.$emit('firePlayback', button.titanId);
-        }
-        button.active = !button.active;
-      } else {
-        this.$emit('firePlayback', button.titanId);
-      }
-    },
-    releaseEffect: function (button) {
-      button.down = false;
-      if (button.type === 'instant') {
-        this.$emit('killPlayback', button.titanId);
+const emit = defineEmits(['firePlayback', 'killPlayback', 'killAllPlaybacks', 'triggerPlayback', 'triggerAutoplay']);
 
-      }
-    },
-    checkToggleState: function () {
-      let toggleButtons = this.effects.filter(function (button) {
-        return button.type === 'toggle';
-      });
-      toggleButtons.forEach(function (button) {
-        console.log(button);
-      });
-    },
-  },
-};
+const interval = ref();
+const effects = ref(settingsJson.effects);
+const show_triggers = ref(settingsJson.show_triggers);
+
+
+function triggerShow(button) {
+  emit('triggerPlayback', button.titanId);
+}
+// function triggerAutoplay() {
+//   emit('triggerAutoplay');
+// }
+function pushEffect(button) {
+  button.down = true;
+  if (button.type === 'toggle') {
+    if (button.active) {
+      emit('killPlayback', button.titanId);
+    } else {
+      emit('firePlayback', button.titanId);
+    }
+    button.active = !button.active;
+  } else {
+    emit('firePlayback', button.titanId);
+  }
+}
+function releaseEffect(button) {
+  button.down = false;
+  if (button.type === 'instant') {
+    emit('killPlayback', button.titanId);
+
+  }
+}
+function checkToggleState() {
+  let toggleButtons = effects.value.filter(function(button) {
+    return button.type === 'toggle';
+  });
+  toggleButtons.forEach(function(button) {
+    console.log(button);
+  });
+}
+
+onBeforeMount(() => {
+  checkToggleState();
+  interval.value = setInterval(() => {
+    checkToggleState();
+  }, 30000);
+});
+
+onMounted(() => {
+  for (const effect of effects.value) {
+    effect.active = false;
+    effect.down = false;
+  }
+});
+
 </script>

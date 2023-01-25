@@ -2,10 +2,12 @@
   "faders": [
     {
       "title": "Smoke Power",
+      "name": "smoke_power",
       "titanId": 10542
     },
     {
       "title": "Smoke Fan",
+      "name": "smoke_fan",
       "titanId": 10545
     }
   ],
