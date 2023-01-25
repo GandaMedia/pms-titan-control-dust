@@ -33,7 +33,6 @@
 </template>
 
 <script lang="ts">
-
 import ButtonGrid from './components/ButtonGrid.vue';
 import TitanConnectionCheck from './components/TitanConnectionCheck.vue';
 import MasterFader from './components/MasterFader.vue';
@@ -88,11 +87,13 @@ export default {
       //     .get(url);
       // });
 
-      let triggerUrl = 'http://'
-        + this.setupData.titan_ip
-        + ':4430/titan/script/2/Playbacks/FirePlaybackAtLevel?handle_titanId=' + tid
-        + '&level_level=1'
-        + '&alwaysRefire=false';
+      let triggerUrl =
+        'http://' +
+        this.setupData.titan_ip +
+        ':4430/titan/script/2/Playbacks/FirePlaybackAtLevel?handle_titanId=' +
+        tid +
+        '&level_level=1' +
+        '&alwaysRefire=false';
       // axios
       //   .get(url)
       //   .then(function () {
@@ -103,50 +104,45 @@ export default {
       axios.get(triggerUrl);
     },
     triggerAutoplay: function () {
-      let url = 'http://'
-        + this.setupData.titan_ip
-        + ':4430/titan/script/2/Playbacks/KillAllPlaybacks';
-      let triggerUrl = 'http://'
-        + this.setupData.titan_ip
-        + ':4430/titan/script/2/CueLists/Play?handle_titanId=8827';
-      axios
-        .get(url)
-        .then(function () {
-          axios
-            .get(triggerUrl);
-        });
+      let url =
+        'http://' + this.setupData.titan_ip + ':4430/titan/script/2/Playbacks/KillAllPlaybacks';
+      let triggerUrl =
+        'http://' +
+        this.setupData.titan_ip +
+        ':4430/titan/script/2/CueLists/Play?handle_titanId=8827';
+      axios.get(url).then(function () {
+        axios.get(triggerUrl);
+      });
     },
     firePlayback: function (tid) {
-      let url = 'http://'
-        + this.setupData.titan_ip
-        + ':4430/titan/script/2/Playbacks/FirePlaybackAtLevel?handle_titanId=' + tid
-        + '&level_level=1'
-        + '&alwaysRefire=false';
-      axios
-        .get(url);
+      let url =
+        'http://' +
+        this.setupData.titan_ip +
+        ':4430/titan/script/2/Playbacks/FirePlaybackAtLevel?handle_titanId=' +
+        tid +
+        '&level_level=1' +
+        '&alwaysRefire=false';
+      axios.get(url);
     },
     killPlayback: function (tid) {
-      let url = 'http://'
-        + this.setupData.titan_ip
-        + ':4430/titan/script/2/Playbacks/KillPlayback?handle_titanId=' + tid;
-      axios
-        .get(url);
+      let url =
+        'http://' +
+        this.setupData.titan_ip +
+        ':4430/titan/script/2/Playbacks/KillPlayback?handle_titanId=' +
+        tid;
+      axios.get(url);
     },
     killAllPlaybacks: function () {
-      let url = 'http://'
-        + this.setupData.titan_ip
-        + ':4430/titan/script/2/Playbacks/KillAllPlaybacks';
-      axios
-        .get(url);
+      let url =
+        'http://' + this.setupData.titan_ip + ':4430/titan/script/2/Playbacks/KillAllPlaybacks';
+      axios.get(url);
     },
   },
 };
-
-
 </script>
 
 <style>
-input[type=range][orient=vertical] {
+input[type='range'][orient='vertical'] {
   writing-mode: bt-lr; /* IE */
   -webkit-appearance: slider-vertical; /* WebKit */
   width: 8px;
@@ -154,4 +150,3 @@ input[type=range][orient=vertical] {
   padding: 0 5px;
 }
 </style>
-

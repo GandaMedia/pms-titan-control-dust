@@ -7,9 +7,7 @@
     <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
       <div class="pr-16 sm:text-center sm:px-16">
         <p class="font-medium text-white">
-          <span class="md:hidden">
-            TITAN SERVER NOT CONNECTED
-          </span>
+          <span class="md:hidden"> TITAN SERVER NOT CONNECTED </span>
           <span class="hidden md:inline">
             TITAN SERVER NOT CONNECTED AT {{ setupData.titan_ip }}
           </span>
@@ -24,8 +22,7 @@ import setupJson from '../../setup.json';
 import axios from 'axios';
 
 export default {
-  components: {
-  },
+  components: {},
   data: function () {
     return {
       setupData: setupJson,
@@ -41,20 +38,22 @@ export default {
     clearInterval();
   },
   methods: {
-    titanIsConnected: function(){
+    titanIsConnected: function () {
       return axios
         .get('http://' + this.setupData.titan_ip + ':4430/titan/get/System/SoftwareVersion')
         .then(function () {
           // handle success
           return false;
-
         })
         .catch(function () {
           // handle error
           return true;
-        });    },
+        });
+    },
     checkTitanPresence: function () {
-      this.connectionError = this.titanIsConnected().then(result => this.connectionError = result);
+      this.connectionError = this.titanIsConnected().then(
+        result => (this.connectionError = result),
+      );
     },
   },
 };
@@ -86,9 +85,6 @@ export default {
 //
 //
 // checkTitanPresence();
-
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
