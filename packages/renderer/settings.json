@@ -1,216 +1,100 @@
 {
   "faders": [],
   "effects": [
-    {
-      "title": "Smoke",
-      "titanId": 32810,
-      "source": "https://images.unsplash.com/photo-1582036575848-a20ace74f594?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=713&q=80"
-    },
+
     {
       "title": "Strobe",
       "type": "toggle",
-      "titanId": 26904,
+      "titanId": 9367,
       "source": "https://images.unsplash.com/photo-1583459094467-e0db130c0dea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     },
-    {
-      "title": "Strobe Pulses",
-      "type": "toggle",
-      "titanId": 26972,
-      "source": "https://images.unsplash.com/photo-1615486511262-c7b5c7f42b14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
-    },
-    {
-      "title": "Strobe Scatter",
-      "type": "toggle",
-      "titanId": 27065,
-      "source": "https://images.unsplash.com/photo-1521144664892-85ff056e75a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
-    },
-    {
-      "title": "Strobe Offset",
-      "type": "toggle",
-      "titanId": 27131,
-      "source": "https://images.unsplash.com/photo-1485550409059-9afb054cada4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
-    },
-    {
-      "title": "Strobe Ramp",
-      "type": "toggle",
-      "titanId": 27550,
-      "source": "https://images.unsplash.com/photo-1526277712896-20b3ec88a2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-    },
+
     {
       "title": "Strobe Slow",
       "type": "toggle",
-      "titanId": 27600,
+      "titanId": 9376,
       "source": "https://images.unsplash.com/photo-1588087699156-a91fb26b1b1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-    },
-    {
-      "title": "Strobe Wash",
-      "type": "toggle",
-      "titanId": 27858,
-      "source": "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-    },
-    {
-      "title": "Strobe White",
-      "titanId": 27887,
-      "source": "https://images.unsplash.com/photo-1484503793037-5c9644d6a80a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
-    },
-    {
-      "title": "Strobe Red",
-      "titanId": 27895,
-      "source": "https://images.unsplash.com/photo-1530128118208-89f6ce02b37b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-    },
-    {
-      "title": "Strobe Blue",
-      "titanId": 27907,
-      "source": "https://plus.unsplash.com/premium_photo-1670282654525-62fed9d7d4ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
-    },
-    {
-      "title": "Strobe Rainbow",
-      "titanId": 27964,
-      "source": "https://images.unsplash.com/photo-1558470598-a5dda9640f68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
-    },
-    {
-      "title": "Strobe RGB",
-      "titanId": 28072,
-      "source": "https://images.unsplash.com/photo-1514732800601-524d62e9b8a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1396&q=80"
-    },
-    {
-      "title": "Black out",
-      "type": "toggle",
-      "titanId": 2862,
-      "source": "https://images.unsplash.com/photo-1589180883060-7e17fc2efaf6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "Blinder",
-      "type": "toggle",
-      "titanId": 14238,
-      "source": "https://images.unsplash.com/photo-1600181679202-1d3d9af9a2d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
-    },
-    {
-      "title": "Rainbow Flash",
-      "type": "toggle",
-      "titanId": 14286,
-      "source": "https://images.unsplash.com/photo-1525787018795-f6419ea29f90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-    },
-    {
-      "title": "Bar Colours",
-      "titanId": 18083,
-      "source": "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyJTIwY29sb3JzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-    },
-    {
-      "title": "Bar Red",
-      "titanId": 18079,
-      "source": "https://images.unsplash.com/photo-1468056961052-15507578a50d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
-    },
-    {
-      "title": "Bar Blue",
-      "titanId": 18081,
-      "source": "https://images.unsplash.com/photo-1589060040843-7a31813e6fb0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
-    },
-    {
-      "title": "Bar Off",
-      "titanId": 18480,
-      "source": "https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
-    },
-    {
-      "title": "VIP Colours",
-      "titanId": 18667,
-      "source": "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFyJTIwY29sb3JzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-    },
-    {
-      "title": "VIP Red",
-      "titanId": 18663,
-      "source": "https://images.unsplash.com/photo-1468056961052-15507578a50d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
-    },
-    {
-      "title": "VIP Blue",
-      "titanId": 18665,
-      "source": "https://images.unsplash.com/photo-1589060040843-7a31813e6fb0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
-    },
-    {
-      "title": "VIP Off",
-      "titanId": 18669,
-      "source": "https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
     }
   ],
   "show_triggers": [
     {
       "title": "AutoPilot",
-      "titanId": 8827,
+      "titanId": 9567,
       "source": "https://images.unsplash.com/photo-1496843916299-590492c751f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     },
     {
-      "title": "Slow Red",
-      "titanId": 2838,
+      "title": "White Gobo",
+      "titanId": 9199,
       "source": "https://images.unsplash.com/photo-1469532844423-7e9107f9a96f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80"
     },
     {
-      "title": "Slow Blue",
-      "titanId": 2840,
+      "title": "Red White Circles",
+      "titanId": 9202,
       "source": "https://images.unsplash.com/photo-1536839042892-7baf158bfde5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     },
     {
-      "title": "Colour Scroll",
-      "titanId": 2844,
+      "title": "Red White Pan",
+      "titanId": 9213,
       "source": "https://images.unsplash.com/photo-1520549421221-3e77d246063d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
     },
     {
-      "title": "Tilt Dim",
-      "titanId": 2848,
+      "title": "White CrisCross",
+      "titanId": 9224,
       "source": "https://images.unsplash.com/photo-1564804176050-8d4ffecb083d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3264&q=80"
     },
     {
-      "title": "MASH Colours",
-      "titanId": 2850,
+      "title": "Red White Cross",
+      "titanId": 9247,
       "source": "https://images.unsplash.com/photo-1600984177310-c86c8f8fa9c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
     },
     {
-      "title": "White Flash",
-      "titanId": 2852,
+      "title": "White Square",
+      "titanId": 9269,
       "source": "https://images.unsplash.com/photo-1518301729788-0149e0619397?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
     },
     {
-      "title": "Police",
-      "titanId": 2854,
+      "title": "Red Tilt",
+      "titanId": 9280,
       "source": "https://images.unsplash.com/photo-1526666361175-e3595627c376?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80"
     },
     {
-      "title": "Tungsten Pulse",
-      "titanId": 2842,
+      "title": "Red Circle",
+      "titanId": 9312,
       "source": "https://images.unsplash.com/photo-1605646481836-5e5a98c6c756?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
     },
     {
-      "title": "Halloween",
-      "titanId": 18491,
+      "title": "Red White Diamond",
+      "titanId": 9301,
       "source": "https://images.unsplash.com/photo-1604350931404-3e34cad8b8ec?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFsb3dlZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
-      "title": "Xmas",
-      "titanId": 18493,
+      "title": "Red Circle",
+      "titanId": 9312,
       "source": "https://media.istockphoto.com/photos/funny-hungry-santa-claus-picture-id1273693600?b=1&k=20&m=1273693600&s=170667a&w=0&h=6j8xjMpk5DtLm_-95fWs2ZVklTHYv1rT_NmNSOlGYm8=&fit=crop&w=800&q=60"
     },
     {
-      "title": "GIG White Pulse",
-      "titanId": 21893,
+      "title": "White Cross",
+      "titanId": 9335,
       "source": "https://images.unsplash.com/photo-1604177052603-c2b4cff228db?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFsb3dlZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
-      "title": "GIG Police",
-      "titanId": 21884,
+      "title": "Red White",
+      "titanId": 9356,
       "source": "https://images.unsplash.com/photo-1604177052603-c2b4cff228db?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFsb3dlZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
-      "title": "GIG Slow Red",
-      "titanId": 21881,
+      "title": "Pink Blue",
+      "titanId": 9350,
       "source": "https://images.unsplash.com/photo-1604177052603-c2b4cff228db?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFsb3dlZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
-      "title": "GIG Blue White",
-      "titanId": 21879,
+      "title": "Blue Green",
+      "titanId": 9369,
       "source": "https://images.unsplash.com/photo-1604177052603-c2b4cff228db?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFsb3dlZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
-      "title": "GIG Walkin",
-      "titanId": 21897,
+      "title": "White Pry",
+      "titanId": 9379,
       "source": "https://images.unsplash.com/photo-1604177052603-c2b4cff228db?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFsb3dlZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     }
   ]
