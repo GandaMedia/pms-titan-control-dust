@@ -57,6 +57,18 @@
       "type": "toggle",
       "titanId": 10761,
       "source": "https://images.unsplash.com/photo-1498697123750-ccf6aa7fdfe4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
+    },
+    {
+      "title": "SL DJ light",
+      "type": "toggle",
+      "titanId": 10657,
+       "source": "https://images.unsplash.com/photo-1498697123750-ccf6aa7fdfe4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
+    },
+    {
+      "title": "Centre DJ light",
+      "type": "toggle",
+      "titanId": 10723,
+       "source": "https://images.unsplash.com/photo-1498697123750-ccf6aa7fdfe4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
     }
   ],
   "show_triggers": [
