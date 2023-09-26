@@ -1,64 +1,25 @@
 {
   "faders": [],
   "effects": [
-    {
-      "title": "Haze High",
-      "source": "https://images.unsplash.com/photo-1609609014985-bfd695dad544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "Haze Medium",
-      "source": "https://images.unsplash.com/photo-1609609014985-bfd695dad544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "Haze Low",
-      "source": "https://images.unsplash.com/photo-1609609014985-bfd695dad544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "Haze Off",
-      "source": "https://images.unsplash.com/photo-1609609014985-bfd695dad544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "SL DJ light",
-      "type": "toggle",
-      "titanId": 10657,
-      "source": "https://images.unsplash.com/photo-1517814761483-6769dab4e9c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "Centre DJ light",
-      "type": "toggle",
-      "titanId": 10723,
-      "source": "https://images.unsplash.com/photo-1517814761483-6769dab4e9c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
-    },
+
     {
       "title": "Strobe",
+      "type": "toggle",
       "titanId": 9367,
-      "source": "https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2130&q=80https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
+      "source": "https://images.unsplash.com/photo-1583459094467-e0db130c0dea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     },
+
     {
       "title": "Strobe Slow",
+      "type": "toggle",
       "titanId": 9376,
-      "source": "https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2130&q=80https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "Blackout",
-      "titanId": 10476,
-      "source": "https://images.unsplash.com/photo-1553711739-8874961780ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "Blackout + Strobe",
-      "titanId": 10761,
-      "source": "https://images.unsplash.com/photo-1498697123750-ccf6aa7fdfe4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
+      "source": "https://images.unsplash.com/photo-1588087699156-a91fb26b1b1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     }
   ],
   "show_triggers": [
     {
       "title": "AutoPilot",
       "titanId": 9567,
-      "source": "https://images.unsplash.com/photo-1496843916299-590492c751f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
-    },
-    {
-      "title": "Auto Opening",
-      "titanId": 27653,
       "source": "https://images.unsplash.com/photo-1496843916299-590492c751f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
     },
     {
@@ -139,112 +100,49 @@
     {
       "title": "Dust Text",
       "titanId": 9939,
-      "source": "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      "source":  "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
       "title": "Cross",
       "titanId": 9985,
-      "source": "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      "source":  "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
       "title": "Music Strobe",
       "titanId": 10015,
-      "source": "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      "source":  "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
       "title": "Fat Chevron",
       "titanId": 10031,
-      "source": "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      "source":  "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
       "title": "Red Strobes",
       "titanId": 10097,
-      "source": "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      "source":  "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
       "title": "Worms",
       "titanId": 10095,
-      "source": "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      "source":  "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
       "title": "Words",
       "titanId": 10099,
-      "source": "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      "source":  "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
       "title": "Tree",
       "titanId": 10101,
-      "source": "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      "source":  "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     },
     {
       "title": "Heart",
       "titanId": 10103,
-      "source": "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-    },
-    {
-      "title": "NAC 1",
-      "titanId": 10333,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Logo",
-      "titanId": 10381,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Dots",
-      "titanId": 10383,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Fireworks",
-      "titanId": 10385,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Vert Lines",
-      "titanId": 10387,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Blocks",
-      "titanId": 10421,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Text",
-      "titanId": 10423,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Fill The Blocks",
-      "titanId": 10425,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Circles",
-      "titanId": 10427,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Ceiling text",
-      "titanId": 10433,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Fluid",
-      "titanId": 10435,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Logo 2",
-      "titanId": 10797,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
-    },
-    {
-      "title": "NAC Join Us",
-      "titanId": 10799,
-      "source": "https://gettix.online/storage/306/conversions/xCHKBpFuRRXUY36510ukGBLVelSCJk-metaTm90LUEtQ3VsdC1Mb2dvLnBuZw==--large.png"
+      "source":  "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     }
+
+
   ]
 }
