@@ -13,21 +13,25 @@
     {
       "title": "Haze High",
       "type": "toggle",
+      "titanId": 28163,
       "source": "https://images.unsplash.com/photo-1609609014985-bfd695dad544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
     },
     {
       "title": "Haze Medium",
       "type": "toggle",
+      "titanId": 28181,
       "source": "https://images.unsplash.com/photo-1609609014985-bfd695dad544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
     },
     {
       "title": "Haze Low",
       "type": "toggle",
+      "titanId": 28189,
       "source": "https://images.unsplash.com/photo-1609609014985-bfd695dad544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
     },
     {
       "title": "Haze Off",
       "type": "toggle",
+      "titanId": 28193,
       "source": "https://images.unsplash.com/photo-1609609014985-bfd695dad544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
     },
     {
