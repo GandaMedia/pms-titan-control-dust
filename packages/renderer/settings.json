@@ -35,6 +35,12 @@
       "source": "https://images.unsplash.com/photo-1609609014985-bfd695dad544?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
     },
     {
+      "title": "Blinder",
+      "type": "toggle",
+      "titanId": 30404,
+      "source": "https://images.unsplash.com/photo-1512799906445-d591d53082c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+    },
+    {
       "title": "Strobe",
       "type": "toggle",
       "titanId": 9367,
@@ -201,6 +207,66 @@
       "title": "Heart",
       "titanId": 10103,
       "source": "https://images.unsplash.com/photo-1643642969389-6db6b7a0fa56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+      "title": "Face Low",
+      "titanId": 29739,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "title": "Face High",
+      "titanId": 29777,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "title": "Face Red",
+      "titanId": 29871,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "title": "Face Blue",
+      "titanId": 10103,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "title": "Face r/b chase",
+      "titanId": 30000,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "title": "Band Red",
+      "titanId": 30178,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "title": "Band Blue",
+      "titanId": 30193,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "title": "Band White",
+      "titanId": 30211,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "title": "Band Strobe White",
+      "titanId": 30226,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "title": "Stage Red",
+      "titanId": 30721,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "title": "Stage Blue",
+      "titanId": 30703,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "title": "Stage Yellow",
+      "titanId": 30725,
+      "source": "https://images.unsplash.com/photo-1600779547877-be592ef5aad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
     },
     {
       "title": "NAC 1",
