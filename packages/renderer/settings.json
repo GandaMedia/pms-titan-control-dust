@@ -53,6 +53,24 @@
       "source": "https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2130&q=80https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
     },
     {
+      "title": "Red Strobe",
+      "type": "toggle",
+      "titanId": 35444,
+      "source": "https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2130&q=80https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
+    },
+    {
+      "title": "Blue Strobe",
+      "type": "toggle",
+      "titanId": 35450,
+      "source": "https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2130&q=80https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
+    },
+    {
+      "title": "RGB Strobe",
+      "type": "toggle",
+      "titanId": 35491,
+      "source": "https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2130&q=80https://images.unsplash.com/photo-1562737794-88835094442e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=512&q=80"
+    },
+    {
       "title": "Blackout",
       "type": "toggle",
       "titanId": 10476,
@@ -162,6 +180,61 @@
       "title": "White Pry",
       "titanId": 9379,
       "source": "https://images.unsplash.com/photo-1604177052603-c2b4cff228db?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFsb3dlZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+      "title": "Or/Bl Pulse",
+      "titanId": 34286,
+      "source": "https://images.unsplash.com/photo-1514285490982-4130e9aefedb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Or/Bl Tilt",
+      "titanId": 34409,
+      "source": "https://images.unsplash.com/photo-1514285490982-4130e9aefedb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Bl Flash",
+      "titanId": 34498,
+      "source": "https://images.unsplash.com/photo-1514285490982-4130e9aefedb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "DJ Flash",
+      "titanId": 34581,
+      "source": "https://images.unsplash.com/photo-1514285490982-4130e9aefedb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Bl Flash Tilt",
+      "titanId": 35071,
+      "source": "https://images.unsplash.com/photo-1514285490982-4130e9aefedb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Bl/Wh Flash",
+      "titanId": 35220,
+      "source": "https://images.unsplash.com/photo-1514285490982-4130e9aefedb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Bl/UV Flash",
+      "titanId": 35412,
+      "source": "https://images.unsplash.com/photo-1514285490982-4130e9aefedb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Wh Flash",
+      "titanId": 36070,
+      "source": "https://images.unsplash.com/photo-1514285490982-4130e9aefedb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "UV Pulse",
+      "titanId": 36459,
+      "source": "https://images.unsplash.com/photo-1514285490982-4130e9aefedb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Madrix Deck 1",
+      "titanId": 9939,
+      "source": "https://images.unsplash.com/photo-1574120583586-de8847ae992c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "title": "Madrix Deck 2",
+      "titanId": 36964,
+      "source": "https://images.unsplash.com/photo-1574120583586-de8847ae992c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "title": "Dust Text",
